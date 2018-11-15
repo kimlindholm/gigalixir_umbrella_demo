@@ -8,11 +8,9 @@ defmodule DemoGreeter do
 
   ## Examples
 
-      iex> DemoGreeter.hello()
-      :world
+      iex> DemoGreeter.hello("Phoenix")
+      "Hello Phoenix"
 
   """
-  def hello do
-    :world
-  end
+  def hello(name), do: "Hello #{name}"
 end
