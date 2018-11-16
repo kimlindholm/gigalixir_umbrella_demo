@@ -1,0 +1,4 @@
+info "****** Building Phoenix static assets"
+NODE_ENV=production npm run deploy
+cd $phoenix_dir
+POOL_SIZE=2 mix "${phoenix_ex}.digest"
